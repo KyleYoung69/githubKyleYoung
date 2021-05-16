@@ -1,4 +1,4 @@
-package p2_package;
+package p10_package;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

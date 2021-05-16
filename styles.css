@@ -1,0 +1,62 @@
+html {
+  font-size: 10px;
+  margin: 0;
+
+
+  }
+  body
+  {
+    font-size: 15px;
+    background-image: url("background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: green;
+    font-family: "Courier New", monospace;
+    
+  }
+  h1
+  {
+    font-size: 20px;
+  }
+  h2
+  {
+    font-size: 18px;
+  }
+  h3
+  {
+    font-size: 18px;
+  }
+  h4
+  {
+    font-size: 18px;
+  }
+  h5
+  {
+    font-size: 20px;
+  }
+  .reading
+  {
+    color:white;
+     font-family: "Modak", serif;
+     font-size: 15px;
+  }
+  @font-face {
+  font-family: 'Modak';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/modak-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/modak-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/modak-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/modak-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/modak-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/modak-v5-latin-regular.svg#Modak') format('svg'); /* Legacy iOS */
+}
+ 
+  
+
+  
+
+  /* modak-regular - latin */
+}

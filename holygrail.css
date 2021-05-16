@@ -1,0 +1,65 @@
+html {
+  width: 100%;                    /* 100% width of parent (root) element */
+  height: 100vh;                  /* 100% height of viewport */
+  background: rgb(0, 0, 0, 0.1);  /* 10% opacity black (very light gray) */
+  font-size: 1.0em;               /* root font size */
+}
+body {
+  margin: 0;                      /* no margin at edge of content */
+  height: 100%;                   /* 100% height of parent (html) element */
+}
+div.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas:
+    "head head head"
+    "panleft mainbody panright"
+    "foot foot foot";
+}
+div.header {
+  background-image: url("head.jpg");  
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: rgb(77,222,181);                            /* 20% black */
+  grid-area: head;    
+  color: rgb(255,178,207);
+   font-family: "Courier New", monospace;
+   font-size: 120px;
+  text-align: center;
+           /* head corresponds to name in template */
+}
+div.footer {
+  background-color: rgb(77,222,181);
+  grid-area: foot;
+  color: rgb(123,49,127);
+   font-family: "Courier New", monospace;
+   font-size: 20px;
+  text-align: center;
+
+}
+div.panel {                            /* div elements with "panel" class */
+  background: rgb(44,164,132);
+  color: rgb(255,178,207);
+   font-family: "Courier New", monospace;
+   font-size: 20px;
+  text-align: center;
+                          /* 10% black */
+}
+div.panel.left {                    /* with both "panel" and "left" class */
+  grid-area: panleft;
+}
+div.panel.right {
+  grid-area: panright;
+}
+div.mainbody {
+  background: rgb(42,110,84);
+  grid-area: mainbody;
+  color: rgb(255,178,207);
+   font-family: "Courier New", monospace;
+   font-size: 20px;
+    text-align: center;
+
+}
